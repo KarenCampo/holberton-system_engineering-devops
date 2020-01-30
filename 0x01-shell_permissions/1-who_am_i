@@ -1,2 +1,2 @@
 #!/bin/bash
-id -u -rw-rw-rw- 
+uid -rw-rw-rw- 
