@@ -1,0 +1,1 @@
+The command and codes for shell permissions
