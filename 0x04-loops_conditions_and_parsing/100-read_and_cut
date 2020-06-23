@@ -1,7 +1,7 @@
 #!/bin/bash
 # This Bash script displays the username stored in /etc/passwd path
 
-while IFS=: read -r ln
+while IFS = read -r ln
 do 
  echo "$ln" | cut -f 1,3,6 -d ":"
-done < /etc/passwd
+done < "/etc/passwd"
