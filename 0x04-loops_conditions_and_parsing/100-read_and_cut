@@ -1,4 +1,4 @@
-#!/bin/bash/env bash
+#!/usr/bin/env bash
 # This Bash script displays the username stored in /etc/passwd path
 while read -r LINE
 do 
