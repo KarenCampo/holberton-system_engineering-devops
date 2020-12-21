@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Configure Nginx server and a response header
+#Creates redirection 301 404 not found page
+sudo apt-get update -y
+sud apt-get upgrade -y
+sudo apt-get install nginx -y
+
+service nginx restart
