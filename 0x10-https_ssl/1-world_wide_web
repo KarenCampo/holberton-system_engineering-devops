@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 # Bash script that will display information about subdomains
 my_subdomains(){
-    result=$(dig "$1.$2" | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -2 | tr '\n' ' ')
-    echo "$2 $result" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
+    result=$(dig "$1.$2" | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -1 | tr '\n' ' ')
+    echo "$1 $result" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
 }
 if [ "$#" == 1 ]
 then
     my_subdomain "www" "$1"
-    my_subdomain "$1" "lb-01"
-    my_subdomain "$1" "web-01"
-    my_subdomain "$1" "web-02"
+    my_subdomain "lb-01" "$1"
+    my_subdomain "web-01" "$1"
+    my_subdomain "web-02" "$1"
 elif [ "$#" == 2 ]
 then
     my_subdomain "$1" "$2"
