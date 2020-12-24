@@ -6,11 +6,11 @@ my_subdomains(){
 }
 if [ "$#" == 1 ]
 then
-    my_subdomain "www" "$1"
-    my_subdomain "lb-01" "$1"
-    my_subdomain "web-01" "$1"
-    my_subdomain "web-02" "$1"
+    my_subdomains "www" "$1"
+    my_subdomains "lb-01" "$1"
+    my_subdomains "web-01" "$1"
+    my_subdomains "web-02" "$1"
 elif [ "$#" == 2 ]
 then
-    my_subdomain "$1" "$2"
+    my_subdomains "$1" "$2"
 fi
