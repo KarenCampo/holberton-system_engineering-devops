@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Changes the user in a server
-# cat /etc/passwd | cut -d":" -f 1 | grep www | wc -l
+# script that accepts one argument
 
 sudo -u "$1" "whoami"
