@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Bash script that configures the container to fit the above requirementspkill apache2
+chmod 4 /etc/nginx/nginx.conf
+sed -i -E 's/(listen.*)80 /\18080 /g' /etc/nginx/sites-enabled/defaultsudo -u nginx service nginx start
