@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """ CSV  Module
 """
-import requests
 import csv
+import requests
 from sys import argv as av
 
 
