@@ -15,4 +15,4 @@ def top_ten(subreddit):
         for thread in rq.json().get('data').get('children'):
             print(thread.get('data').get('title'))
     except:
-        print ("None")
+        print("None")
