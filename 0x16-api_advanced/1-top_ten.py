@@ -14,5 +14,5 @@ def top_ten(subreddit):
                           allow_redirects=False)
         for thread in rq.json().get('data').get('children'):
             print(thread.get('data').get('title'))
-    except Exception:
+    except:
         return None
